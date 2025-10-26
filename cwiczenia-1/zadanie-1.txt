@@ -1,0 +1,18 @@
+Przy założonej przepustowości łącza 10 Mb/s,
+w ciągu trzech godzin można realnie pobrać
+(uwzględniając straty transmisji) około 11,871 GB danych.
+
+Obliczenia:
+
+3 godziny = 3 × 60 × 60 = 10 800 sekund
+
+10 Mb/s × 10 800 s = 108 000 Mb
+
+1 bajt = 8 bitów → 108 000 Mb / 8 = 13 500 MB
+
+1 GB = 1024 MB → 13 500 MB / 1024 = 13,18 GB
+
+Uwzględniając 10% strat: 13,18 × 0,9 = 11,871 GB
+
+Zatem w praktyce, przy przepustowości 10 Mb/s,
+w ciągu 3 godzin można pobrać 11,871 GB danych.

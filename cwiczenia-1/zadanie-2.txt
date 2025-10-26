@@ -1,0 +1,19 @@
+Wykonanie przewodu sieciowego:
+Połączenie wykonano w standardzie T568A.
+
+Wyniki pomiaru z testera:
+
+1 → 4
+2 → 5
+3 → 7
+4 → 1
+5 → 2
+6 → 8
+7 → 3
+8 → 6
+
+
+
+Tester pokazuje sygnał na każdym kablu,
+ale w jednym gnieździe RJ45 przewody są
+zamienione miejscami (podłączone na odwrót).
