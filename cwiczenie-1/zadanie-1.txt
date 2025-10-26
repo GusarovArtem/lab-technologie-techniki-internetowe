@@ -18,10 +18,10 @@ Konwersja na megabajty:
 108 000 Mb ÷ 8 = 13 500 MB
 
 Konwersja na gigabajty:
-13 500 MB ÷ 1024 ≈ 13,18 GB
+13 500 MB ÷ 1024 = 13.18359375 GB
 
 Uwzględnienie strat transmisji (10%):
-13,18 GB × 0,9 = 11,87 GB
+13.18359375 GB × 0.9 = 11.865234375 GB
 
 Wynik końcowy:
-Przy przepustowości łącza 10 Mb/s, w ciągu 3 godzin można realnie pobrać około 11,87 GB danych.
+Przy przepustowości łącza 10 Mb/s, w ciągu 3 godzin można realnie pobrać okolo 11.865 GB danych.
