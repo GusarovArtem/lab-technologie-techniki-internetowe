@@ -1,0 +1,13 @@
+W uruchomionym Wierszu Poleceń wykonałem polecenie ipconfig /displaydns, które wyświetliło aktualną zawartość pamięci podręcznej DNS na moim komputerze. Następnie w przeglądarce odwiedziłem stronę https://www.interia.pl
+, której wcześniej nie otwierałem. Po ponownym użyciu polecenia ipconfig /displaydns zauważyłem nowy wpis związany z domeną www.interia.pl
+, co potwierdziło, że adres został zapisany w pamięci podręcznej DNS.
+
+Odpowiedzi na pytania:
+
+Co to jest pamięć podręczna DNS?
+
+Jest to lokalna baza danych na komputerze, w której przechowywane są odwiedzane nazwy domen wraz z odpowiadającymi im adresami IP.
+
+Dlaczego komputer zapisuje odwiedzone adresy?
+
+Dzięki temu przyspiesza ładowanie stron internetowych i zmniejsza liczbę zapytań wysyłanych do zewnętrznych serwerów DNS.
