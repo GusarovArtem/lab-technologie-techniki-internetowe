@@ -1,0 +1,24 @@
+W ramach ćwiczenia przygotowałem kabel sieciowy UTP kategorii 5e, zakończony według standardu T568A. Kabel wykonany został jako prosty, co oznacza, że układ przewodów jest identyczny na obu końcach złącza RJ-45. Prace nie napotkały większych trudności.
+Na początku zdjęto zewnętrzną izolację kabla i rozdzielono skręcone pary przewodów. Następnie ułożyłem przewody w odpowiedniej kolejności zgodnej ze standardem T568A, przyciąłem je równo i umieściłem w złączu RJ-45. Po upewnieniu się, że przewody są poprawnie ułożone, złącze zostało zaciśnięte przy użyciu zaciskarki. Te same czynności powtórzyłem na drugim końcu kabla, zachowując identyczny układ.
+Kabel został następnie sprawdzony za pomocą testera kabli sieciowych. Tester nie wykazał żadnych usterek – wszystkie przewody połączyły się prawidłowo, nie stwierdzono przerw, zwarć ani błędnego rozmieszczenia żył. Kabel działał poprawnie i umożliwiał prawidłową transmisję danych w sieci Ethernet.
+Podsumowując, kabel został wykonany prawidłowo i spełnia wymagania standardu T568A.
+
+
+Test kabla sieciowego – T568B (skrosowany)
+
+Pin 1: Działa w standardzie prostym, nie działa po skrzyżowaniu
+Pin 2: Nie działa w standardzie prostym, działa po skrzyżowaniu
+Pin 3: Działa w obu przypadkach
+Pin 4: Nie działa w standardzie prostym, działa po skrzyżowaniu
+Pin 5: Działa w standardzie prostym, nie działa po skrzyżowaniu
+Pin 6: Działa w obu przypadkach
+Pin 7: Działa w obu przypadkach
+Pin 8: Działa w obu przypadkach
+
+Prawdopodobne przyczyny problemów:
+
+Kabel mógł **nie być równo ucięty**, przez co niektóre żyły nie mają kontaktu.
+Nie wszystkie żyłki mogły być **dokładnie dociśnięte do końca w złączach RJ-45**.
+
+Wniosek:
+Większość pinów działa prawidłowo, ale kilka nie przesyła sygnału, przez co kabel nie jest w pełni sprawny. Należy przyciąć kabel równo i upewnić się, że wszystkie przewody są dokładnie włożone do złącza, a następnie przetestować go ponownie.

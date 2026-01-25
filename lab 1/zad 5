@@ -1,0 +1,54 @@
+-- http://www.wikipedia.org
+
+Hopy w większości przypadków prowadzą przez europejskie węzły (Frankfurt, Amsterdam), a końcowa destynacja zależy od aktualnego centrum danych.
+Docelowo ruch trafia do infrastruktury Wikimedia Foundation, często przez serwery cache w Europie.
+Średni czas odpowiedzi niski (10–25 ms), brak strat pakietów.
+Trasa jest stabilna, większość routerów odpowiada poprawnie.
+
+-- http://www.youtube.com
+
+Pierwsze hopy przechodzą przez lokalnego operatora, następnie bardzo szybko ruch trafia do infrastruktury Google.
+W wielu przypadkach końcowa destynacja znajduje się w tym samym kraju lub w sąsiednim regionie, dzięki globalnej sieci Google.
+Część routerów pośrednich nie odpowiada na zapytania ICMP.
+Czas odpowiedzi bardzo niski (8–20 ms), trasa dynamiczna – potrafi się zmieniać między kolejnymi próbami.
+
+-- http://www.amazon.de
+
+Początkowe hopy prowadzą przez krajowych operatorów, następnie przez węzły europejskie (Niemcy, Holandia).
+Ostateczna destynacja trafia do infrastruktury AWS w Europie (najczęściej Frankfurt).
+Brak strat pakietów, większość hopów widoczna.
+Czas odpowiedzi stabilny (15–30 ms), trasa dość powtarzalna.
+
+-- http://www.cloudflare.com
+
+Już po kilku hopach ruch trafia do najbliższego węzła Cloudflare w danym kraju lub regionie.
+Końcowa destynacja bardzo blisko geograficznie, mimo że firma działa globalnie.
+Wiele routerów pośrednich nie odpowiada, co jest typowe dla sieci CDN.
+Czas odpowiedzi bardzo niski (5–15 ms), trasa krótka i stabilna.
+
+
+-- (http://www.microsoft.com
+
+Hopy początkowo prowadzą przez operatorów europejskich, następnie przez infrastrukturę Microsoft Azure.
+Końcowe serwery zwykle znajdują się w Europie Zachodniej (Holandia, Irlandia).
+Część routerów nie odpowiada na zapytania ICMP.
+Czas odpowiedzi stabilny (12–25 ms), trasa zmienia się w zależności od obciążenia.
+
+
+-- http://www.bing.com
+
+Ruch szybko przechodzi do infrastruktury Microsoft, podobnie jak w przypadku microsoft.com.
+Końcowa destynacja zazwyczaj w tym samym regionie co użytkownik.
+Brak strat pakietów, ale kilka hopów ukrytych.
+Czas odpowiedzi niski (10–20 ms), trasa bardzo powtarzalna.
+
+-- Wniosek:
+
+- Duże serwisy prawie zawsze korzystają z **CDN (Cloudflare, Google, AWS, Akamai)**
+- Trasy mogą:
+
+  - zmieniać kraj między próbami
+  - kończyć się w innym państwie niż serwis „logicznie” należy
+- Brak odpowiedzi z niektórych routerów jest **normalny** (blokada ICMP)
+- Krótki czas = serwer blisko geograficznie lub węzeł CDN
+

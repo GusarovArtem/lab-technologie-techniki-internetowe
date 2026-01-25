@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Moje hobby</title>
+</head>
+<body>
+
+<header>
+    <h1>Moje hobby – podróżowanie</h1>
+    <p>Strona poświęcona mojej pasji do odkrywania świata</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#dlaczego">Dlaczego podróże?</a></li>
+        <li><a href="#miejsca">Ulubione miejsca</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+</nav>
+
+<section id="dlaczego">
+    <h2>Dlaczego warto podróżować?</h2>
+    <article>
+        <p>Podróże pozwalają poznać nowe kultury, smaki i ludzi. Dzięki nim uczymy się samodzielności
+        oraz otwartości na świat.</p>
+
+        <blockquote>
+            „Podróże kształcą bardziej niż jakakolwiek książka.”
+        </blockquote>
+    </article>
+</section>
+
+<section id="miejsca">
+    <h2>Moje ulubione miejsca</h2>
+
+    <table border="1">
+        <tr>
+            <th>Kraj</th>
+            <th>Miasto</th>
+            <th>Dlaczego warto?</th>
+        </tr>
+        <tr>
+            <td>Włochy</td>
+            <td>Rzym</td>
+            <td>Zabytki i historia</td>
+        </tr>
+        <tr>
+            <td>Francja</td>
+            <td>Paryż</td>
+            <td>Sztuka i atmosfera</td>
+        </tr>
+        <tr>
+            <td>Hiszpania</td>
+            <td>Barcelona</td>
+            <td>Morze i architektura</td>
+        </tr>
+    </table>
+
+    <figure>
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/09/32/adventure-1868817_1280.jpg" 
+             alt="Podróżowanie" width="400">
+        <figcaption>Podróże to najlepsza inwestycja w siebie</figcaption>
+    </figure>
+</section>
+
+<section id="kontakt">
+    <h2>Skontaktuj się ze mną</h2>
+
+    <form>
+        <label>Imię:<br>
+            <input type="text" name="imie">
+        </label><br><br>
+
+        <label>Email:<br>
+            <input type="email" name="email">
+        </label><br><br>
+
+        <label>Wiadomość:<br>
+            <textarea name="wiadomosc" rows="4" cols="30"></textarea>
+        </label><br><br>
+
+        <input type="submit" value="Wyślij">
+    </form>
+</section>
+
+<footer>
+    <p>Autor strony: Jan Kowalski</p>
+    <p>Źródło inspiracji: <a href="https://www.wikipedia.org">Wikipedia</a></p>
+</footer>
+
+</body>
+</html>

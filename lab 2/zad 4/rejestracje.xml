@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uczestnicy>
+  <uczestnik uid="a1">
+    <imię>Marcin</imię>
+    <nazwisko>Zieliński</nazwisko>
+    <płeć>Mężczyzna</płeć>
+    <wiek>22</wiek>
+  </uczestnik>
+
+  <uczestnik uid="a2">
+    <imię>Katarzyna</imię>
+    <nazwisko>Lewandowska</nazwisko>
+    <płeć>Kobieta</płeć>
+    <wiek>20</wiek>
+  </uczestnik>
+
+  <uczestnik uid="a3">
+    <imię>Oskar</imię>
+    <nazwisko>Kowal</nazwisko>
+    <płeć>Inna</płeć>
+    <wiek>24</wiek>
+  </uczestnik>
+</uczestnicy>

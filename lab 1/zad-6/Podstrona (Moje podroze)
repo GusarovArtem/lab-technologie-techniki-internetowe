@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Moje podróże</title>
+</head>
+<body>
+
+<header>
+    <h1>Najciekawsze podróże</h1>
+    <p>Na tej stronie opisuję kilka moich ulubionych wyjazdów</p>
+</header>
+
+<section>
+    <h2>Włochy</h2>
+    <p>Włochy to kraj pełen historii, pysznej kuchni i pięknych miast. 
+    Najbardziej spodobał mi się Rzym oraz Florencja.</p>
+</section>
+
+<section>
+    <h2>Francja</h2>
+    <p>We Francji zachwycił mnie Paryż oraz małe miasteczka w Prowansji. 
+    Szczególnie polecam spacery nad Sekwaną.</p>
+</section>
+
+<section>
+    <h2>Hiszpania</h2>
+    <p>Hiszpania to idealne miejsce na połączenie zwiedzania i wypoczynku. 
+    Barcelona oferuje piękną architekturę i dostęp do morza.</p>
+</section>
+
+<aside>
+    <h3>Moje plany na przyszłość</h3>
+    <ul>
+        <li>Japonia</li>
+        <li>Kanada</li>
+        <li>Norwegia</li>
+    </ul>
+</aside>
+
+<hr>
+
+<p>
+    Wróć do strony głównej: <br>
+    <a href="index.html">Strona główna</a>
+</p>
+
+<footer>
+    <p>&copy; 2026 Moje hobby – podróże</p>
+</footer>
+
+</body>
+</html>

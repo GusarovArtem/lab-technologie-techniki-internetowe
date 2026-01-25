@@ -1,0 +1,45 @@
+Część 2: Analiza dodatkowych protokołów w trybie symulacji
+
+Krok 1: Obserwacja nowych zdarzeń
+
+a. Zamknij wszystkie otwarte okna zawierające informacje o PDU.
+
+b. W sekcji Event List Filters > Visible Events kliknij Show All.
+
+* Wyświetlą się dodatkowe typy zdarzeń (protokoły), takie jak: ACL Filter, ARP, BGP, Bluetooth, CAPWAP, CDP, DHCP, DHCPv6, DNS, DTP, EAPOL, EIGRP, EIGRPv6, FTP, H.323, HSRP, HSRPv6, HTTP, HTTPS, ICMP, ICMPv6, IEC, IPsec, ISAKMP, IoT, IoT TCP, LACP, LLDP, MODBUS, Meraki, NDP, NETFLOW, NTP, New ACL Filter, OSPF, OSPFv6, PaGP, POP3, PPP, PPPoED, PTP, Profinet, RADIUS, REP, RIP, RIPng, RTP, SCCP, SMTP, SNMP, SSH, STP, SYSLOG, TACACS, TCP, TFTP, Telnet, UDP, USB, VTP.
+
+Każdy z tych protokołów pełni inną rolę w zestawie TCP/IP. Na przykład ARP odpowiada za znajdowanie adresów MAC, a DNS przekształca nazwę domenową (np. [www.osi.local](http://www.osi.local)) na adres IP. Protokoły TCP zarządzają nawiązywaniem, utrzymywaniem i zakończeniem sesji komunikacyjnych między urządzeniami. W Packet Tracerze dostępnych jest obecnie ponad 35 różnych protokołów do analizy i przechwytywania zdarzeń.
+
+c. Kliknij pierwsze zdarzenie DNS w kolumnie Info. Przejrzyj zakładki OSI Model i PDU Details, zwracając uwagę na proces enkapsulacji.
+
+* Na warstwie 7 (Layer 7) zakładki OSI Model widać dokładnie, co dzieje się w komunikacji, pokazane w sekcji In Layers i Out Layers:
+
+  * „1. The DNS client sends a DNS query to the DNS server.”
+* Oznacza to, że klient DNS wysyła zapytanie w celu przetłumaczenia nazwy domenowej na adres IP.
+
+d. Przejdź do zakładki Outbound PDU Details i sprawdź sekcję NAME: DNS QUERY.
+
+* Wyświetlana jest nazwa domenowa: [www.osi.local](http://www.osi.local).
+
+e. Kliknij ostatni kolorowy kwadrat w zdarzeniach DNS.
+
+* Wyświetlane urządzenie: PC0
+* Wartość w sekcji DNS ANSWER > ADDRESS w zakładce Inbound PDU Details: 192.168.1.2
+
+f. Znajdź pierwsze zdarzenie HTTP i kliknij kolorowy kwadrat zdarzenia TCP, które następuje bezpośrednio po nim.
+
+* Zaznacz Layer 4 w zakładce OSI Model.
+* W ponumerowanej liście poniżej In Layers i Out Layers:
+
+  * Punkt 4: Połączenie TCP zostało prawidłowo nawiązane.
+  * Punkt 5: Urządzenie ustawia stan połączenia na ESTABLISHED.
+
+TCP odpowiada za ustanawianie, utrzymywanie i kończenie kanału komunikacyjnego między urządzeniami. Te zdarzenia pokazują, że połączenie zostało prawidłowo ustanowione.
+
+g. Kliknij ostatnie zdarzenie TCP. Zaznacz Layer 4 w zakładce OSI Model i przeanalizuj kroki pod In Layers i Out Layers.
+
+* Ostatnia pozycja (punkt 4) wskazuje, że zdarzenie służy do zakończenia procesu ustanawiania połączenia TCP i potwierdzenia jego aktywności (ESTABLISHED).
+
+Symulacja przedstawia sesję internetową między klientem a serwerem w sieci lokalnej (LAN). Klient wysyła żądania do usług działających na serwerze, a serwer musi nasłuchiwać na odpowiednich portach.
+
+* Na podstawie obserwacji warstwy 4 w OSI Model, serwer WWW nasłuchuje żądań na porcie 80.

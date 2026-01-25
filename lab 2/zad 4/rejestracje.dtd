@@ -1,0 +1,28 @@
+<!-- Lista uczestników wydarzenia -->
+        <!ELEMENT uczestnicy (uczestnik+)>
+
+        <!-- Definicja pojedynczego uczestnika -->
+        <!ELEMENT uczestnik (imię, nazwisko, płeć, wiek)>
+        <!ATTLIST uczestnik uid ID #REQUIRED>
+
+        <!-- Szczegóły uczestnika -->
+        <!ELEMENT imię (#PCDATA)>
+        <!ELEMENT nazwisko (#PCDATA)>
+        <!ELEMENT płeć (#PCDATA)>
+        <!ELEMENT wiek (#PCDATA)>
+
+        <!-- Przykładowe dane XML -->
+<uczestnicy>
+    <uczestnik uid="u1">
+        <imię>Jan</imię>
+        <nazwisko>Kowalski</nazwisko>
+        <płeć>mężczyzna</płeć>
+        <wiek>25</wiek>
+    </uczestnik>
+    <uczestnik uid="u2">
+        <imię>Anna</imię>
+        <nazwisko>Nowak</nazwisko>
+        <płeć>kobieta</płeć>
+        <wiek>30</wiek>
+    </uczestnik>
+</uczestnicy>

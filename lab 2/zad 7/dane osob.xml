@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dane_osobowe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="dane osob.xsd">
+  <osoba>
+    <imie>Artem</imie>
+    <nazwisko>Husarov</nazwisko>
+    <plec>M</plec>
+    <wiek>99</wiek>
+  </osoba>
+</dane_osobowe>

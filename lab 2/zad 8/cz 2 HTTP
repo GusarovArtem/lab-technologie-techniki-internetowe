@@ -1,0 +1,47 @@
+- Krok 3: Analiza zawartości pakietu HTTP
+
+a. Kliknij pierwszy kolorowy kwadrat w kolumnie Info na liście zdarzeń (Event List). W razie potrzeby rozwiń panel symulacji lub użyj suwaka pod listą zdarzeń. Pojawi się okno PDU Information at Device: Web Client. Ponieważ to początek transmisji, dostępne będą tylko dwie zakładki: Model OSI i Outbound PDU Details. W przypadku kolejnych zdarzeń pojawi się dodatkowa zakładka Inbound PDU Details. Jeśli zdarzenie jest ostatnie w strumieniu ruchu, wyświetlane będą jedynie OSI Model i Inbound PDU Details.
+
+b. Upewnij się, że aktywna jest zakładka OSI Model. W kolumnie Out Layers zaznacz Layer 7.
+
+* Obok etykiety Layer 7 wyświetla się: HTTP.
+
+Jakie informacje pokazują ponumerowane kroki poniżej pól In Layers i Out Layers?
+
+* 1. Klient HTTP wysyła żądanie HTTP do serwera.
+
+c. Kliknij Next Layer. Powinna być podświetlona warstwa 4.
+
+* Wartość portu docelowego: Src Port: 1074, Dst Port: 80 (TCP)
+
+d. Kliknij Next Layer, aby zobaczyć warstwę 3.
+
+* Adres docelowy IP: 192.168.1.2, adres źródłowy: 192.168.1.10 (IP)
+
+e. Kliknij Next Layer, aby sprawdzić warstwę 2.
+
+* Wyświetlane informacje: Ethernet II Header 0001.492A.8E65 >> 0090.21DC.3999
+
+f. Przejdź do zakładki Outbound PDU Details.
+
+* Dane w sekcji PDU Details odzwierciedlają warstwy modelu TCP/IP. Informacje z sekcji Ethernet II są bardziej szczegółowe niż te widoczne w zakładce OSI Model na warstwie 2. Zakładka Outbound PDU Details podaje dokładniejsze i opisowe dane.
+
+Porównanie danych między PDU Details a OSI Model:
+
+* IP (Layer 3): Wspólne informacje: adres IP źródłowy 192.168.1.10 i docelowy 192.168.1.2.
+* TCP (Layer 4): Wspólne dane: port źródłowy 1074 i port docelowy 80.
+* HTTP (Layer 7): Pole Host ma wartość odpowiadającą wpisanej domenie w przeglądarce: [www.osi.local](http://www.osi.local).
+
+g. Kliknij kolejny kolorowy kwadrat w kolumnie Info. W tym przypadku aktywna jest tylko warstwa 1 – urządzenie przenosi ramkę z bufora do sieci.
+
+h. Przejdź do następnego pola HTTP Info w liście zdarzeń i kliknij kolorowy kwadrat. Okno pokazuje zarówno In Layers, jak i Out Layers. Zwróć uwagę na strzałkę pod kolumną In Layers, która pokazuje kierunek danych. Strzałka na górze kolumny wskazuje w prawo – oznacza to, że serwer wysyła dane do klienta.
+
+* Główna różnica między In Layers a Out Layers: In Layers pokazuje dane odbierane przez serwer, a Out Layers dane wysyłane do klienta. Adresy IP i porty są odwrócone, ponieważ zmienia się kierunek transmisji.
+
+i. Kliknij zakładkę Outbound PDU Details i przewiń do sekcji HTTP.
+
+* Pierwsza linia wiadomości HTTP: HTTP Data: Connection: close
+
+j. Kliknij ostatni kolorowy kwadrat w kolumnie Info.
+
+* Wyświetlane są tylko dwie zakładki, ponieważ jest to ostatni pakiet i dane są jedynie odbierane przez komputer.

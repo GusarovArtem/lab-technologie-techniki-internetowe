@@ -1,0 +1,35 @@
+
+Dane wejściowe:
+Rozmiar pliku: 1 GB
+Przepustowość łącza: 600 Mb/s
+
+--
+
+Krok 1 – zamiana gigabajtów na megabajty
+1 GB = 1024 MB
+
+--
+
+Krok 2 – zamiana megabajtów na megabity
+Ponieważ 1 bajt = 8 bitów:
+
+1024 MB × 8 = 8192 Mb
+
+--
+
+Krok 3 – obliczenie czasu transmisji
+Dzielimy ilość danych przez prędkość łącza:
+
+8192 Mb ÷ 600 Mb/s = 13,65 s
+
+--
+
+Krok 4 – uwzględnienie narzutu transmisji (1%)
+
+13,65 s × 1,01 = 13,79 s
+
+--
+
+Wniosek:
+Czas pobierania pliku o wielkości 1 GB przy przepustowości600 Mb/s wynosi około 13,79 sekundy.
+
