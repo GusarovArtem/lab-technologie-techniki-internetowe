@@ -1,0 +1,26 @@
+zostaw pytania takie same, ale sformatuj troche odpowiedzi zeby to maialo teki sam sens, ale zeby bylo widac ze inaczej slowa
+
+Czy adres MAC urządzenia źródłowego pasuje do interfejsu twojego PC?
+-Tak
+ 
+Czy adres MAC urządzenia docelowego pasuje do adresu MAC komputera kolegi?
+-Nie (jest to adres MAC routera)
+ 
+W jaki sposób PC uzyskał adres MAC urządzenia docelowego?
+-Poprzez wysłanie zapytania ARP w sieci lokalnej i otrzymanie odpowiedzi z adresem MAC.
+ 
+ 
+a. Przejrzyj przechwycone dane w programie Wireshark, sprawdź adresy IP i MAC trzech stron internetowych dla których wykonałeś polecenie ping. Poniżej wpisz, docelowy adres IP i MAC dla wszystkich trzech stron internetowych.
+-1st Lokalizacja: IP: 142.251.98.103 MAC: 58:68:7a:8e:88:50
+-2nd Lokalizacja: IP: 88.221.170.194 MAC: 58:68:7a:8e:88:50
+-3rd Lokalizacja: IP: 188.125.89.206 MAC: 58:68:7a:8e:88:50
+ 
+b. Co jest istotne w tej informacji?
+-Adres MAC docelowy jest adresem MAC routera, a nie zdalnej strony internetowej.
+ 
+c. Czym różni się ta informacja od informacji uzyskanej w części 2, dotyczącej używania polecenia ping w sieci lokalnej?
+-W sieci lokalnej adres MAC należy do komputera docelowego, a przy pingowaniu Internetu należy do routera.
+ 
+ 
+Dlaczego Wireshark pokazuje aktualny adres MAC dla hostów lokalnych, ale już nie pokazuje aktualnego MAC dla hostów zdalnych?
+-Ponieważ adresy MAC są używane tylko w sieci lokalnej, a komunikacja z hostami zdalnymi odbywa się przez router.
